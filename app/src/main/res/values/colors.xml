@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="btn_pressed">#6DA1DF</color>
+    <color name="btn_default">#4A90E2</color>
+    <color name="form_textgray">#ACACAC</color>
+    <color name="field_validation_red">#FF1F1F</color>
+    <color name="field_validationgreen">#65BE30</color>
+    <color name="chart_green">#00C8B3</color>
+    <color name="chart_purple">#4D4289</color>
+
+</resources>
