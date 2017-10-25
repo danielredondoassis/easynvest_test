@@ -54,7 +54,7 @@ public class ExampleSendMessageInstrumentedTest {
     }
 
     @Test
-    public void registerSuccessTest(){
+    public void sendMessageSuccessTest(){
 
         onView(withId(R.id.viewpager)).perform(swipeRight());
 
@@ -81,7 +81,7 @@ public class ExampleSendMessageInstrumentedTest {
 
 
     @Test
-    public void registerErrorTest() {
+    public void sendMessageErrorTest() {
 
         onView(withId(R.id.viewpager)).perform(swipeRight());
 

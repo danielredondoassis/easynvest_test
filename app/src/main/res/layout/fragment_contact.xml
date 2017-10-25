@@ -40,7 +40,7 @@
                         android:hint="@string/full_name"
                         android:inputType="textNoSuggestions|textCapWords"
                         android:textSize="16dp"
-                        android:id="@+id/editText" />
+                        android:id="@+id/editNameText" />
 
                 </com.test.easynvest.util.typeface.FontInputTextLayout>
 

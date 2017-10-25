@@ -39,7 +39,7 @@ import static android.app.Activity.RESULT_OK;
 public class ContactFragment extends PictureFragment {
 
 
-    @BindView(R.id.editText)
+    @BindView(R.id.editNameText)
     FontEditText editText;
     @BindView(R.id.editInput)
     FontInputTextLayout editInput;
