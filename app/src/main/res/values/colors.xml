@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#4A90E2</color>
+    <color name="colorPrimaryDark">#4483D1</color>
+    <color name="colorAccent">#6DA1DF</color>
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
@@ -14,5 +14,16 @@
     <color name="field_validationgreen">#65BE30</color>
     <color name="chart_green">#00C8B3</color>
     <color name="chart_purple">#4D4289</color>
+
+    <color name="fund_blue">#468ee5</color>
+    <color name="fund_dark_gray">#7e7e7e</color>
+    <color name="fund_light_gray">#acacac</color>
+    <color name="fund_black">#333333</color>
+    <color name="fund_info_divider_gray">#AFA9A3</color>
+
+
+    <color name="tab_selected">#4483D1</color>
+    <color name="tab_indicator">#F5A623</color>
+
 
 </resources>

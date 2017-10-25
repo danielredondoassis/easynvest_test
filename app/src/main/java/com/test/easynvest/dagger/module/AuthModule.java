@@ -5,6 +5,8 @@ import android.content.Context;
 import com.test.easynvest.dagger.annotations.ActivityContext;
 import com.test.easynvest.data.model.auth.UserModel;
 import com.test.easynvest.view.BaseActivity;
+import com.test.easynvest.view.adapter.SignUpAdapter;
+import com.test.easynvest.view.adapter.holder.BaseHolder;
 
 import dagger.Module;
 import dagger.Provides;

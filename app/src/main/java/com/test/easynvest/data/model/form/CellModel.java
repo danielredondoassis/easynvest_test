@@ -19,11 +19,11 @@ public class CellModel {
 
     @Expose
     @SerializedName("message")
-    private int message;
+    private String message;
 
     @Expose
     @SerializedName("typefield")
-    private int typefield;
+    private String typefield;
 
     @Expose
     @SerializedName("hidden")
@@ -31,7 +31,7 @@ public class CellModel {
 
     @Expose
     @SerializedName("topSpacing")
-    private double topSpacing;
+    private int topSpacing;
 
     @Expose
     @SerializedName("show")
@@ -53,55 +53,28 @@ public class CellModel {
         return type;
     }
 
-    public void setType(int type) {
-        this.type = type;
-    }
-
-    public int getMessage() {
+    public String getMessage() {
         return message;
     }
 
-    public void setMessage(int message) {
-        this.message = message;
-    }
-
-    public int getTypefield() {
+    public String getTypefield() {
         return typefield;
-    }
-
-    public void setTypefield(int typefield) {
-        this.typefield = typefield;
     }
 
     public boolean isHidden() {
         return hidden;
     }
 
-    public void setHidden(boolean hidden) {
-        this.hidden = hidden;
-    }
-
-    public double getTopSpacing() {
+    public int getTopSpacing() {
         return topSpacing;
-    }
-
-    public void setTopSpacing(double topSpacing) {
-        this.topSpacing = topSpacing;
     }
 
     public String getShow() {
         return show;
     }
 
-    public void setShow(String show) {
-        this.show = show;
-    }
-
     public boolean isRequired() {
         return required;
     }
 
-    public void setRequired(boolean required) {
-        this.required = required;
-    }
 }

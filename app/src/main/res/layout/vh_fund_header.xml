@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/horizontal_margin"
+    android:layout_marginRight="@dimen/horizontal_margin"
+    android:layout_height="wrap_content">
+
+    <com.test.easynvest.util.typeface.FontTextView
+        app:customFont="din_pro_medium"
+        android:id="@+id/textTitle"
+        android:layout_marginTop="16dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fundos de investimento"
+        android:textSize="14dp"
+        android:textColor="@color/fund_dark_gray"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <com.test.easynvest.util.typeface.FontTextView
+        app:customFont="din_pro_medium"
+        android:id="@+id/textFundName"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vinci Valorem FI Multimercado"
+        android:layout_marginTop="10dp"
+        android:textSize="24dp"
+        android:textColor="@color/fund_black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_fund_divider"/>
+
+    <com.test.easynvest.util.typeface.FontTextView
+        app:customFont="din_pro_medium"
+        android:id="@+id/textWhatIs"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="O que é?"
+        android:textSize="16dp"
+        android:textColor="@color/fund_dark_gray"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <com.test.easynvest.util.typeface.FontTextView
+        app:customFont="din_pro_medium"
+        android:id="@+id/textDefinition"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="O Fundo tem por objetivo proporcionar aos seus cotistas rentabilidade no longo prazo através de investimentos."
+        android:textSize="16dp"
+        android:textColor="@color/fund_dark_gray"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+</LinearLayout>

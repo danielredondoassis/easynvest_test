@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/horizontal_margin"
+    android:layout_marginRight="@dimen/horizontal_margin"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <com.test.easynvest.util.typeface.FontTextView
+            app:customFont="din_pro_regular"
+            android:id="@+id/textFundInfoLabel"
+            android:layout_weight="1"
+            android:text="Taxa de administração"
+            android:textSize="14dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/fund_light_gray"
+            android:gravity="center_vertical|left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.test.easynvest.util.typeface.FontTextView
+            app:customFont="din_pro_regular"
+            android:id="@+id/textCDValue"
+            android:layout_weight="1.5"
+            android:text="99,9%"
+            android:textSize="14dp"
+            android:textColor="@color/fund_black"
+            android:gravity="center_vertical|right"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,48 +1,48 @@
 <resources>
     <string name="app_name">Easynvest</string>
 
-    <!-- EDIT USER PROFILE INGO -->
-
-    <string name="edit_profile_title">EDITAR PERFIL</string>
-
-    <string name="edit_user_name">NOME COMPLETO</string>
-    <string name="edit_user_email">EMAIL</string>
-    <string name="edit_user_old_phone">CELULAR ANTIGO</string>
-    <string name="edit_user_new_phone">CELULAR NOVO</string>
-    <string name="edit_user_city">CIDADE</string>
-    <string name="edit_user_uf">UF</string>
-    <string name="edit_user_birthdate">DATA DE NASCIMENTO</string>
-    <string name="edit_user_maritial_status">ESTADO CIVIL</string>
-    <string name="edit_user_gender">SEXO</string>
-
-
-    <string name="optin_receive_notifications">Deseja receber notificações?</string>
-    <string name="optin_receive_promotions">Deseja receber promoções?</string>
-    <string name="optin_receive_events">Deseja receber eventos?</string>
-    <string name="optin_receive_actions">Deseja receber ações?</string>
-
-    <string name="signup_alert_email_error">EMAIL inválido</string>
-    <string name="signup_alert_confirmation_email_error">DIGITE UM EMAIL DE CONFIRMAÇÃO VÁLIDO</string>
-    <string name="signup_alert_email_in_use_error">Email em uso.</string>
-    <string name="signup_alert_phone_error">DIGITE UM NÚMERO DE TELEFONE VÁLIDO</string>
-    <string name="signup_alert_password_too_short_error">DIGITE UMA SENHA COM PELO MENOS 6 CARACTERES</string>
-    <string name="signup_alert_password_mismatch_error">AS SENHAS INSERIDAS SÃO DIFERENTES</string>
-    <string name="signup_alert_terms_error">Você precisa aceitar os termos de Política e Privacidade</string>
-
-    <!-- ERRORS AND DIALOG STRINGS-->
-    <string name="defult_server_error_message">Falha de conexão com o servidor. Por favor tente novamente.</string>
-    <string name="general_alert_error">Error</string>
-    <string name="ok_button_dialog">OK</string>
-    <string name="cancel_button_dialog">CANCELAR</string>
-    <string name="attention">Atenção</string>
-    <string name="error_server_response">Server response error</string>
-    <string name="signup_alert_email_user_not_found_error">Usuário não encontrado</string>
-    <string name="connection_error">Erro de conexão\nToque para tentar novamente.</string>
-    <string name="connection_error_loading">Erro de conexão</string>
-    <string name="connection_error_try_again">Toque para tentar novamente</string>
+    <!-- General UI Strings -->
     <string name="loading_title">Carregando</string>
     <string name="loading_message">Por favor, aguarde...</string>
-    <string name="btn_cancel">Cancelar</string>
-    <string name="btn_advance">Avançar</string>
-    <string name="btn_back">Voltar</string>
+
+    <!-- Form Input Text Headers -->
+    <string name="input_text_email_header">Email</string>
+    <string name="input_text_pass_header">SENHA</string>
+    <string name="input_text_confirm_pass_header">CONFIRMAR</string>
+    <string name="input_text_name_header">NOME</string>
+    <string name="input_text_birthdate_header">DD/MM/AAAA</string>
+    <string name="input_text_phone_header">Telefone</string>
+
+    <!-- Buttons -->
+
+    <string name="button_signup_send">Enviar</string>
+    <string name="error_name_needed">Insira um nome válido.</string>
+    <string name="error_invalid_email">Insira um e-mail válido.</string>
+    <string name="error_invalid_phone">Insira um telefone válido.</string>
+    <string name="tab_investment">Investimento</string>
+    <string name="tab_contact">Contato</string>
+    <string name="twelve_months">12 meses</string>
+    <string name="in_year">No Ano</string>
+    <string name="in_month">No mês</string>
+    <string name="button_invest">Investir</string>
+
+    <string name="obrigado">Enviar</string>
+    <string name="register_email">Gostaria de cadastrar meu e-mail</string>
+
+
+    <!-- CAMERA UPLOAD -->
+    <string name="fail_prepare_camera_alert">Erro ao preparar arquivo para câmera</string>
+    <string name="fail_initialize_camera_alert">Erro ao inicializar câmera</string>
+    <string name="initialize_file_fail_message">Erro ao inicializar arquivo</string>
+    <string name="camera_permission_message">Para realizar o upload de fotos, precisamos pedir acesso à sua câmera.</string>
+    <string name="dialog_permission_title">Atenção</string>
+    <string name="dialog_picture_title">Adicionar foto</string>
+    <string name="dialog_choose_picture_camera_option">Tirar uma foto com a câmera</string>
+    <string name="dialog_choose_picture_gallery_option">Selecionar uma foto da galeria</string>
+    <string name="delete_vehicle_confirmation">Você realmente deseja remover esse veículo da sua lista? Essa ação não pode ser desfeita.</string>
+    <string name="full_name">Nome completo</string>
+    <string name="send_new_message">Enviar nova mensagem</string>
+    <string name="message_sent">Mensagem enviada com sucesso :)</string>
+    <string name="thanks">Obrigado!</string>
+
 </resources>

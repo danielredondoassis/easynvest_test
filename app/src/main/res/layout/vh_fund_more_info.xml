@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/horizontal_margin"
+    android:layout_marginRight="@dimen/horizontal_margin"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <com.test.easynvest.util.typeface.FontTextView
+        app:customFont="din_pro_medium"
+        android:id="@+id/textMoreInfoTitle"
+        android:text="Mais informações sobre o investimento"
+        android:textSize="18dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/fund_blue"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <com.test.easynvest.util.typeface.FontTextView
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.test.easynvest.util.typeface.FontTextView
+            android:layout_weight="1.8"
+            app:customFont="din_pro_regular"
+            android:id="@+id/textFundLabel"
+            android:text="Fundo"
+            android:textSize="14dp"
+            android:textColor="@color/fund_light_gray"
+            android:gravity="center_vertical|right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.test.easynvest.util.typeface.FontTextView
+            android:layout_weight="1.8"
+            app:customFont="din_pro_regular"
+            android:id="@+id/textCDLabel"
+            android:text="CD"
+            android:textSize="14dp"
+            android:textColor="@color/fund_light_gray"
+            android:gravity="center_vertical|right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <com.test.easynvest.util.typeface.FontTextView
+            app:customFont="din_pro_regular"
+            android:id="@+id/textFundInfoMonthLabel"
+            android:layout_weight="1"
+            android:text="@string/in_month"
+            android:textSize="14dp"
+            android:textColor="@color/fund_light_gray"
+            android:gravity="center_vertical|left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.test.easynvest.util.typeface.FontTextView
+            app:customFont="din_pro_regular"
+            android:id="@+id/textFundMonthValue"
+            android:layout_weight="1.8"
+            android:text="99,9%"
+            android:textSize="14dp"
+            android:textColor="@color/fund_black"
+            android:gravity="center_vertical|right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.test.easynvest.util.typeface.FontTextView
+            app:customFont="din_pro_regular"
+            android:id="@+id/textCDMonthValue"
+            android:layout_weight="1.8"
+            android:text="99,9%"
+            android:textSize="14dp"
+            android:textColor="@color/fund_black"
+            android:gravity="center_vertical|right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <com.test.easynvest.util.typeface.FontTextView
+            app:customFont="din_pro_regular"
+            android:id="@+id/textFundInfoYearLabel"
+            android:layout_weight="1"
+            android:text="@string/in_year"
+            android:textSize="14dp"
+            android:textColor="@color/fund_light_gray"
+            android:gravity="center_vertical|left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.test.easynvest.util.typeface.FontTextView
+            app:customFont="din_pro_regular"
+            android:id="@+id/textFundYearValue"
+            android:layout_weight="1.8"
+            android:text="99,9%"
+            android:textSize="14dp"
+            android:textColor="@color/fund_black"
+            android:gravity="center_vertical|right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.test.easynvest.util.typeface.FontTextView
+            app:customFont="din_pro_regular"
+            android:id="@+id/textCDYearValue"
+            android:layout_weight="1.8"
+            android:text="99,9%"
+            android:textSize="14dp"
+            android:textColor="@color/fund_black"
+            android:gravity="center_vertical|right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <com.test.easynvest.util.typeface.FontTextView
+            app:customFont="din_pro_regular"
+            android:id="@+id/textFundInfo12MonthLabel"
+            android:layout_weight="1"
+            android:text="@string/twelve_months"
+            android:textSize="14dp"
+            android:textColor="@color/fund_light_gray"
+            android:gravity="center_vertical|left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.test.easynvest.util.typeface.FontTextView
+            app:customFont="din_pro_regular"
+            android:id="@+id/textFund12MonthValue"
+            android:layout_weight="1.8"
+            android:text="99,9%"
+            android:textSize="14dp"
+            android:textColor="@color/fund_black"
+            android:gravity="center_vertical|right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.test.easynvest.util.typeface.FontTextView
+            app:customFont="din_pro_regular"
+            android:id="@+id/textCD12MonthValue"
+            android:layout_weight="1.8"
+            android:text="99,9%"
+            android:textSize="14dp"
+            android:textColor="@color/fund_black"
+            android:gravity="center_vertical|right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/fund_info_divider_gray"></RelativeLayout>
+
+
+</LinearLayout>

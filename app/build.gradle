@@ -49,12 +49,7 @@ android {
     }
 
     signingConfigs {
-        debug {
-            keyAlias 'easynvest'
-            keyPassword '12345'
-            storeFile file('KeyStore/google-release-key.keystore')
-            storePassword '12345'
-        }
+
         release {
             keyAlias 'easynvest'
             keyPassword '12345'
@@ -96,6 +91,8 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    // Test
+    testCompile 'org.mockito:mockito-core:1.10.19'
     testCompile 'junit:junit:4.12'
     // Google support/design
     compile 'com.android.support:multidex:1.0.1'

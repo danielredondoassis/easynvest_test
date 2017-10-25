@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/horizontal_margin"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.test.easynvest.util.typeface.FontInputTextLayout
+                    app:customFont="din_pro_regular"
+                    android:id="@+id/editInput"
+                    android:layout_alignParentTop="true"
+                    android:theme="@style/TextLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <com.test.easynvest.util.typeface.FontEditText
+                        app:customFont="din_pro_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:hint="@string/full_name"
+                        android:inputType="textNoSuggestions|textCapWords"
+                        android:textSize="16dp"
+                        android:id="@+id/editText" />
+
+                </com.test.easynvest.util.typeface.FontInputTextLayout>
+
+                <ImageView
+                    android:id="@+id/btnNameClear"
+                    android:visibility="gone"
+                    android:scaleType="centerCrop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/editInput"
+                    android:layout_alignTop="@+id/editInput"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="7dp"
+                    android:src="@drawable/ic_clear"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.test.easynvest.util.typeface.FontInputTextLayout
+                    app:customFont="din_pro_regular"
+                    android:id="@+id/editEmailInput"
+                    android:layout_alignParentTop="true"
+                    android:theme="@style/TextLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <com.test.easynvest.util.typeface.FontEditText
+                        app:customFont="din_pro_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:textSize="16dp"
+                        android:hint="@string/input_text_email_header"
+                        android:inputType="textNoSuggestions|textEmailAddress"
+                        android:id="@+id/editEmailText" />
+
+                </com.test.easynvest.util.typeface.FontInputTextLayout>
+
+                <ImageView
+                    android:id="@+id/btnEmailClear"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/editEmailInput"
+                    android:layout_alignTop="@+id/editEmailInput"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="7dp"
+                    android:src="@drawable/ic_clear"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.test.easynvest.util.typeface.FontInputTextLayout
+                    app:customFont="din_pro_regular"
+                    android:id="@+id/editPhonetInput"
+                    android:layout_alignParentTop="true"
+                    android:theme="@style/TextLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <com.test.easynvest.util.typeface.FontEditText
+                        app:customFont="din_pro_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:hint="@string/input_text_phone_header"
+                        android:inputType="number"
+                        android:textSize="16dp"
+                        app:is_phone="true"
+                        app:mask="(99) 99999-9999"
+                        android:id="@+id/editPhoneText" />
+
+                </com.test.easynvest.util.typeface.FontInputTextLayout>
+
+                <ImageView
+                    android:id="@+id/btnPhoneClear"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/editPhonetInput"
+                    android:layout_alignTop="@+id/editPhonetInput"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="7dp"
+                    android:src="@drawable/ic_clear"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/attachImage"
+                android:layout_marginTop="30dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_attach_bitmap"/>
+
+            <LinearLayout
+                android:id="@+id/checkBoxLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:layout_marginRight="@dimen/horizontal_margin">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkBoxRegisterEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:button="@drawable/checkbox_selector"/>
+
+                <com.test.easynvest.util.typeface.FontTextView
+                    app:customFont="din_pro_regular"
+                    android:id="@+id/textCheckboxOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_email"
+                    android:textSize="16dp"
+                    android:gravity="center_vertical|left" />
+            </LinearLayout>
+
+            <com.test.easynvest.util.typeface.FontButton
+                app:customFont="din_pro_medium"
+                android:id="@+id/btnSendMessage"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="16dp"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_signup_send"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/button_selector" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/messageSentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/horizontal_margin"
+        android:paddingLeft="@dimen/horizontal_margin"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:alpha="0">
+
+        <com.test.easynvest.util.typeface.FontTextView
+            app:customFont="din_pro_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/thanks"
+            android:textColor="@color/fund_dark_gray"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/textMessageSent" />
+
+        <com.test.easynvest.util.typeface.FontTextView
+            app:customFont="din_pro_medium"
+            android:id="@+id/textMessageSent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/message_sent"
+            android:layout_centerInParent="true"
+            android:textSize="28dp"
+            android:textColor="@color/fund_black"
+            android:gravity="center" />
+
+        <com.test.easynvest.util.typeface.FontTextView
+            app:customFont="din_pro_regular"
+            android:id="@+id/btnSendAnotherMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fund_blue"
+            android:text="@string/send_new_message"
+            android:padding="14dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:textSize="16dp"
+            android:gravity="center"  />
+    </RelativeLayout>
+
+</RelativeLayout>

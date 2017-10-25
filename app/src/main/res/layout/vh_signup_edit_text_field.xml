@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fieldTextLayout"
+    android:layout_marginLeft="@dimen/horizontal_margin"
+    android:layout_marginRight="@dimen/horizontal_margin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.test.easynvest.util.typeface.FontInputTextLayout
+        app:customFont="din_pro_regular"
+        android:id="@+id/editInput"
+        android:layout_alignParentTop="true"
+        android:theme="@style/TextLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <com.test.easynvest.util.typeface.FontEditText
+            app:customFont="din_pro_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:textSize="16dp"
+            android:id="@+id/editText" />
+
+    </com.test.easynvest.util.typeface.FontInputTextLayout>
+
+    <ImageView
+        android:id="@+id/btnClear"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editInput"
+        android:layout_alignTop="@+id/editInput"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="7dp"
+        android:src="@drawable/ic_clear"/>
+
+    <RelativeLayout
+        android:id="@+id/transitionLayout"
+        android:layout_alignTop="@+id/editInput"
+        android:layout_alignBottom="@+id/editInput"
+        android:alpha="0"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+</RelativeLayout>

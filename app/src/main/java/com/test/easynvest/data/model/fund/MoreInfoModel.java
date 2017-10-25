@@ -10,16 +10,13 @@ import java.io.Serializable;
  */
 public class MoreInfoModel implements Serializable {
 
-
     @Expose
     @SerializedName("month")
     private PeriodInfoModel month;
 
-
     @Expose
     @SerializedName("year")
     private PeriodInfoModel year;
-
 
     @Expose
     @SerializedName("12months")

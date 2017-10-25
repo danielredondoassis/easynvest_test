@@ -42,7 +42,7 @@ public class FundModel implements Serializable {
 
     @Expose
     @SerializedName("infoTitle")
-    private int infoTitle;
+    private String infoTitle;
 
     @Expose
     @SerializedName("moreInfo")
@@ -74,5 +74,29 @@ public class FundModel implements Serializable {
 
     public GraphModel getGraphInfo() {
         return graphInfo;
+    }
+
+    public String getRiskTitle() {
+        return riskTitle;
+    }
+
+    public int getRisk() {
+        return risk;
+    }
+
+    public String getInfoTitle() {
+        return infoTitle;
+    }
+
+    public MoreInfoModel getMoreInfo() {
+        return moreInfo;
+    }
+
+    public RowModel[] getInfo() {
+        return info;
+    }
+
+    public RowModel[] getDownInfo() {
+        return downInfo;
     }
 }

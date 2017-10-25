@@ -6,26 +6,42 @@ package com.test.easynvest.data.model;
 
 public enum TypeField {
 
-    TEXT(1),
-    TEL_NUMBER(2),
-    EMAIL(3);
+    TEXT(1,"text"),
+    PHONE(2,"telnumber"),
+    EMAIL(3,"email");
 
-    private final int type;
+    private int type;
+    private String typeName;
 
-    TypeField(int type) {
-        this.type = type;
+    TypeField(int typeId, String typeName) {
+        this.type = typeId;
+        this.typeName = typeName;
     }
 
     public int getType() {
         return type;
     }
 
-    public static TypeField getEnumForId(long id) {
+    public String getTypeName() {
+        return typeName;
+    }
+
+
+    public static TypeField getEnumForName(String name) {
+        for(TypeField typefield : TypeField.values()){
+            if(typefield.getTypeName().equals(name)){
+                return typefield;
+            }
+        }
+        return null;
+    }
+
+    public static TypeField getEnumForId(int id) {
         for(TypeField typefield : TypeField.values()){
             if(typefield.getType() == id){
                 return typefield;
             }
         }
-        return TEXT;
+        return null;
     }
 }

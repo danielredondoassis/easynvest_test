@@ -56,6 +56,13 @@ public class BaseActivity<T> extends AppCompatActivity {
             window.setStatusBarColor(ContextCompat.getColor(this, color));
         }
     }
+
+    public void tintActionBar(int color){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+
+            if(getSupportActionBar() != null)  getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(color)));
+        }
+    }
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
