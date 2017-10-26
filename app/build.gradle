@@ -4,10 +4,11 @@ buildscript {
     repositories {
         jcenter()
         maven { url "https://jitpack.io" }
+        maven { url 'https://maven.google.com' }
+
     }
     dependencies {
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
-        classpath 'me.tatarka:gradle-retrolambda:3.3.0'
     }
 }
 
@@ -15,8 +16,6 @@ repositories {
     jcenter()
     maven { url "https://jitpack.io" }
 }
-
-apply plugin: 'me.tatarka.retrolambda'
 
 android {
 
@@ -68,6 +67,8 @@ android {
         exclude 'META-INF/NOTICE.txt'
     }
 
+    flavorDimensions "versionCode"
+
     productFlavors {
         prod {
             buildConfigField "String", "API_ENDPOINT", "\"https://api.easynvest.com.br/\""
@@ -84,7 +85,6 @@ android {
 
 }
 
-apply plugin: 'com.neenbedankt.android-apt'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -110,7 +110,7 @@ dependencies {
     // View Injection Library
     compile 'com.jakewharton:butterknife:8.5.1'
     compile 'com.jakewharton.timber:timber:4.3.1'
-    apt 'com.jakewharton:butterknife-compiler:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
     // Database
     compile 'com.j256.ormlite:ormlite-core:4.48'
     compile 'com.j256.ormlite:ormlite-android:4.48'
@@ -134,7 +134,7 @@ dependencies {
     testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
 
     //Dagger
-    apt "com.google.dagger:dagger-compiler:2.8"
+    annotationProcessor "com.google.dagger:dagger-compiler:2.8"
     compile "com.google.dagger:dagger:2.8"
     provided 'javax.annotation:jsr250-api:1.0'
     compile 'javax.inject:javax.inject:1'

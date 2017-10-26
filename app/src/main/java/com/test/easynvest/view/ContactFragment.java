@@ -45,13 +45,13 @@ public class ContactFragment extends PictureFragment {
     FontInputTextLayout editInput;
     @BindView(R.id.btnNameClear)
     ImageView btnNameClear;
-    @BindView(R.id.editEmailText)
+    @BindView(R.id.editEmailMessageText)
     FontEditText editEmailText;
     @BindView(R.id.editEmailInput)
     FontInputTextLayout editEmailInput;
     @BindView(R.id.btnEmailClear)
     ImageView btnEmailClear;
-    @BindView(R.id.editPhoneText)
+    @BindView(R.id.editPhoneMessageText)
     FontEditText editPhoneText;
     @BindView(R.id.editPhonetInput)
     FontInputTextLayout editPhonetInput;

@@ -78,7 +78,7 @@
                         android:textSize="16dp"
                         android:hint="@string/input_text_email_header"
                         android:inputType="textNoSuggestions|textEmailAddress"
-                        android:id="@+id/editEmailText" />
+                        android:id="@+id/editEmailMessageText" />
 
                 </com.test.easynvest.util.typeface.FontInputTextLayout>
 
@@ -117,7 +117,7 @@
                         android:textSize="16dp"
                         app:is_phone="true"
                         app:mask="(99) 99999-9999"
-                        android:id="@+id/editPhoneText" />
+                        android:id="@+id/editPhoneMessageText" />
 
                 </com.test.easynvest.util.typeface.FontInputTextLayout>
 
